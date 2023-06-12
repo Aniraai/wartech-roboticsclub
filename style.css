@@ -71,24 +71,34 @@ nav {
 }
 
 .wartech span {
-    z-index: -2;
+    /* z-index: -2; */
     font-size: 7rem;
     display: block;
     color: white;
     letter-spacing: 40px;
     -webkit-text-fill-color: 
     transparent;
-    line-height: 1em;
+    line-height: .9em;
     -webkit-text-stroke-width: 1px;
+    transition: .5s;
+}
+.wartech span:hover{
+    text-shadow: 10px -4px;
 }
 
 .title-center {
-    text-shadow: 10px -4px;
     translate: 90px;
+    /* font-weight: 550; */
+    font-weight: 500;
 }
 
 
 
 .title-2 {
     translate: 45px;
+    mix-blend-mode:soft-light;
+}
+.title-1{
+    color: #d9d9d9;
+    mix-blend-mode:difference;
 }
