@@ -1,0 +1,94 @@
+@font-face {
+    font-family: robotics-original;
+    src: url(nasalization-rg.otf);
+}
+* {
+    font-family: robotics-original  ;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar starts here  */
+nav {
+    width: 100%;
+    z-index: 3;
+    display: grid;
+    position: fixed;
+    place-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.logo img {
+    width: 60px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+/* navbar ends here */
+
+
+/* background image  */
+.landing-page-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
+
+.radial-gradient {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(rgba(64, 75, 82, 0), rgba(100, 106, 109, 60%), rgba(100, 106, 109, 100%));
+}
+
+
+/* wartech title for landing page  */
+.wartech {
+    display: grid;
+    place-items: center;
+    /* margin-top; */
+    padding-top: 80px;
+}
+
+.wartech span {
+    z-index: -2;
+    font-size: 7rem;
+    display: block;
+    color: white;
+    letter-spacing: 40px;
+    -webkit-text-fill-color: 
+    transparent;
+    line-height: 1em;
+    -webkit-text-stroke-width: 1px;
+}
+
+.title-center {
+    text-shadow: 10px -4px;
+    translate: 90px;
+}
+
+
+
+.title-2 {
+    translate: 45px;
+}
