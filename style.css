@@ -102,3 +102,29 @@ nav {
     color: #d9d9d9;
     mix-blend-mode:difference;
 }
+
+/* making the website responsive */
+
+@media screen and (max-width:1018px) {
+    
+    .wartech span{
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width:875px) {
+    
+    .wartech span{
+        font-size: 3rem;
+        letter-spacing: 20px;
+    }
+}
+@media screen and (max-width:576px) {
+    
+    .wartech span{
+        font-size: 2rem;
+        letter-spacing: 10px;
+        /* line-height: 1.3em; */
+    }
+}
+
+
