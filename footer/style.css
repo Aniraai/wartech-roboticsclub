@@ -1,8 +1,15 @@
+@font-face {
+  font-family: robotics-original;
+  src: url(../nasalization-rg.otf);
+}
 *{
     margin: 0;
     padding: 0;
+    font-family: robotics-original;
   }
- 
+ body{
+  overflow-y: hidden;
+ }
   .main {
       display: flex;
       flex-direction: column;
@@ -16,12 +23,6 @@
         background-color: #000000;
     }
     
-  
-    
-    h1{
-      color:#000000;
-  
-    }
     footer{
       background-color: #595757;
       height: auto;
@@ -46,33 +47,33 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      text-align: center;
+      flex-wrap:  wrap;
   }
- 
-  .box1 p{
-    
-    width: 160px;
-  
-  }
+ @media screen and (max-width:660px) {
+    .footer-top{
+
+      justify-content: center;
+    } 
+ }
+
   .line{
-    width: 90vw;
-    height: 2px;
-    margin: 40px auto;
+    width: 90%;
+    height: 2px; 
+    margin: 20px auto;
     background-color:#000000;
   
   }
   .comment-and-time{
     display: flex;
-    width: 90vw;
+    flex: wrap;
+    width: 70vw;
     margin: auto;
     align-items: center;
     justify-content: space-between;
   }
   
-  input{
-    position:relative ;
-    display: inline-block;
-  
-  }
+
   .photo{
     text-align: center;
   }
@@ -89,7 +90,9 @@
    
   }
   .comment-and-time{
-    width: 90vw;
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     align-items: center;
     justify-content: space-between;
@@ -114,26 +117,30 @@
     }
     .contacts #in {
        
-        margin: 20px -24px;
+        margin-left: 0;
     }
 
-    .contacts #fa{
+    /* .contacts #fa{
            margin: 16px 17px 0 35px
     }
     .contacts #yu {
         margin: 10px 20px;
+    } */
+    @media screen and (max-width:370px) {
+      .comment-and-time{
+        justify-content: center;
+      }
+    }
+    .contacts{
+      min-width: 200px;
+      /* width: 500px; */
     }
 
-   
-   
-.radial-gradient {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    left: 0;
-    width: 100vw;
-    height: 36vh;
-    background: radial-gradient(rgba(64, 75, 82, 0), rgba(100, 106, 109, 60%), rgba(100, 106, 109, 100%));
+.social-media{
+  margin: auto 10px;
 }
+   
+   
+
 
 
